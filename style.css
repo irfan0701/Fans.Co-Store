@@ -410,10 +410,11 @@ th:last-child{
     padding: 20px 0;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 .form-container span{
     font-weight: bold;
-    padding: 10px;
+    padding: 0 10px;
     color: #555;
     cursor: pointer;
     width: 100px;
@@ -427,6 +428,7 @@ th:last-child{
     padding: 0 20px;
     position: absolute;
     top: 130px;
+    transition: transform 0.5s;
 }
 form input{
     width: 100%;
@@ -445,16 +447,22 @@ form .btn:focus{
     outline: none;
 }
 #LoginForm{
-    left: -300px;
+    left: 0px;
 }
 #RegisterForm{
-    left: 0px;
+    left: -300px;
 }
 form a{
     font-size: 12px;
 }
 #Indicator{
-    
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: scaleX(100px);
+    transition: transform 0.5s;
 }
 
 /* ----------Query Menu---------- */
